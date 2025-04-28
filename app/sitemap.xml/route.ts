@@ -13,6 +13,7 @@ export async function GET() {
     { path: "/productos", priority: 0.8 },
     { path: "/productos/crudalitos", priority: 0.8 },
     { path: "/productos/stayfit", priority: 0.8 },
+    { path: "/productos/cetolyte", priority: 0.8 },
     { path: "/contacto", priority: 0.8 },
     { path: "/sobre-nosotros", priority: 0.8 },
   ]

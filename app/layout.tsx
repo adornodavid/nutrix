@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://nutrixmexico.vercel.app"),
+  metadataBase: new URL("https://nutrixmexico.com"),
   alternates: {
     canonical: "/",
   },
