@@ -32,7 +32,7 @@ const product = {
     "Vitaminas B1, B3, B6, B12 y C → Restauran los niveles de vitaminas afectadas por el alcohol",
     "Resveratrol y Vitamina E → Antioxidantes que reducen el daño celular causado por el alcohol",
   ],
-  presentation: "Frasco con 90 cápsulas (20 porciones)",
+  presentation: "Frasco con 90 cápsulas (30 porciones)",
   usage: "Dosis recomendada: Tomar 3 cápsulas el día siguiente a una resaca o desvelo",
   idealFor: [
     "Personas que consumieron alcohol y quieren evitar la resaca",

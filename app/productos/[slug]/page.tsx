@@ -29,7 +29,7 @@ const products = [
       "Extracto de cardo mariano",
       "Ginkgo biloba",
     ],
-    presentation: "Frasco con 60 cápsulas",
+    presentation: "Frasco con 90 cápsulas (30 porciones)",
     image:
       "https://ueg9mrey4dlbouog.public.blob.vercel-storage.com/Nutrix/Imagenes%20producto/Crudalitos%20Render%20Fondo%20Blanco-nBAY3InZZzaob4yGedKg31Zkk1rcZZ",
     reviews: [

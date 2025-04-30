@@ -2,26 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definir variables CSS para las fuentes */
-:root {
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-bebas-neue: "Bebas Neue", sans-serif;
-  --font-be-vietnam: "Be Vietnam Pro", sans-serif;
-}
-
-/* Clases de utilidad para las fuentes */
-.font-montserrat {
-  font-family: var(--font-montserrat);
-}
-
-.font-bebas {
-  font-family: var(--font-bebas-neue);
-}
-
-.font-vietnam {
-  font-family: var(--font-be-vietnam);
-}
-
 .embla {
   overflow: hidden;
 }

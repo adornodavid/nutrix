@@ -69,7 +69,7 @@ module.exports = {
       fontFamily: {
         sans: ["var(--font-montserrat)", ...fontFamily.sans],
         bebas: ["var(--font-bebas-neue)", ...fontFamily.sans],
-        vietnam: ["var(--font-be-vietnam)", ...fontFamily.sans],
+        // Eliminamos la referencia a vietnam
       },
       keyframes: {
         "accordion-down": {

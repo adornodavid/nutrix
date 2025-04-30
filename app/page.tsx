@@ -154,7 +154,7 @@ export default function Home() {
           <div className="container relative px-4 py-32 sm:px-6 lg:px-8">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-5xl md:text-7xl font-bebas tracking-tight mb-8">MÁS QUE SUPLEMENTOS</h1>
-              <p className="text-xl md:text-2xl mb-12 leading-relaxed font-vietnam">
+              <p className="text-xl md:text-2xl mb-12 leading-relaxed font-sans">
                 Una experiencia de bienestar premium diseñada para quienes valoran la excelencia y la distinción en cada
                 aspecto de su vida.
               </p>
@@ -176,7 +176,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bebas tracking-tight mb-6 text-nutrix-green">
                 TU MEJOR ESTILO DE VIDA
               </h2>
-              <p className="text-xl text-nutrix-gray/80 max-w-3xl mx-auto font-vietnam">
+              <p className="text-xl text-nutrix-gray/80 max-w-3xl mx-auto font-sans">
                 Nutrix representa la fusión perfecta entre la elegancia atemporal y el bienestar moderno. Cada producto
                 es una invitación a experimentar lo extraordinario.
               </p>
@@ -191,7 +191,7 @@ export default function Home() {
               <h2 className="text-4xl md:text-5xl font-bebas tracking-tight text-nutrix-white mb-6">
                 NUESTRA COLECCIÓN PREMIUM
               </h2>
-              <p className="text-xl text-nutrix-white/80 max-w-3xl mx-auto font-vietnam">
+              <p className="text-xl text-nutrix-white/80 max-w-3xl mx-auto font-sans">
                 Cada producto es el resultado de nuestra búsqueda incansable por la excelencia y la innovación.
               </p>
             </div>
@@ -257,13 +257,13 @@ export default function Home() {
               <h2 className="text-3xl font-bebas tracking-tighter sm:text-4xl md:text-5xl text-nutrix-green">
                 BENEFICIOS DE NUESTROS PRODUCTOS
               </h2>
-              <p className="mt-4 md:text-lg font-vietnam">Descubre por qué somos la elección premium en suplementos</p>
+              <p className="mt-4 md:text-lg font-sans">Descubre por qué somos la elección premium en suplementos</p>
             </div>
             <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
               {benefits.map((benefit, index) => (
                 <div key={index} className="flex flex-col items-center text-center p-6 bg-nutrix-white rounded-lg">
                   <h3 className="text-xl font-bebas mb-2 text-nutrix-green">{benefit.title}</h3>
-                  <p className="text-nutrix-gray font-vietnam">{benefit.description}</p>
+                  <p className="text-nutrix-gray font-sans">{benefit.description}</p>
                 </div>
               ))}
             </div>
@@ -277,7 +277,7 @@ export default function Home() {
               <h2 className="text-3xl font-bebas tracking-tighter sm:text-4xl md:text-5xl text-nutrix-green">
                 LO QUE DICEN NUESTROS CLIENTES
               </h2>
-              <p className="mt-4 text-nutrix-gray md:text-lg font-vietnam">
+              <p className="mt-4 text-nutrix-gray md:text-lg font-sans">
                 Experiencias reales de personas que confían en Nutrix
               </p>
             </div>
@@ -293,7 +293,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bebas tracking-tighter sm:text-4xl md:text-5xl text-nutrix-green">
                   CONTÁCTANOS
                 </h2>
-                <p className="mt-4 text-nutrix-gray md:text-lg font-vietnam">
+                <p className="mt-4 text-nutrix-gray md:text-lg font-sans">
                   Estamos aquí para responder tus preguntas. Déjanos un mensaje y nos pondremos en contacto contigo
                   pronto.
                 </p>
@@ -380,11 +380,11 @@ export default function Home() {
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             <div>
               <h3 className="text-lg font-bebas mb-4">NUTRIX</h3>
-              <p className="text-sm font-vietnam">Transformando el bienestar con suplementos premium.</p>
+              <p className="text-sm font-sans">Transformando el bienestar con suplementos premium.</p>
             </div>
             <div>
               <h3 className="text-lg font-bebas mb-4">PRODUCTOS</h3>
-              <ul className="space-y-2 text-sm font-vietnam">
+              <ul className="space-y-2 text-sm font-sans">
                 <li>Crudalitos</li>
                 <li>StayFit</li>
                 <li>Cetolyte</li>
@@ -392,7 +392,7 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-lg font-bebas mb-4">ENLACES</h3>
-              <ul className="space-y-2 text-sm font-vietnam">
+              <ul className="space-y-2 text-sm font-sans">
                 <li>Sobre Nosotros</li>
                 <li>Beneficios</li>
                 <li>Testimonios</li>
@@ -414,7 +414,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-12 pt-8 border-t border-nutrix-white/10 text-center text-sm font-vietnam">
+          <div className="mt-12 pt-8 border-t border-nutrix-white/10 text-center text-sm font-sans">
             © {new Date().getFullYear()} Nutrix. Todos los derechos reservados.
           </div>
         </div>
