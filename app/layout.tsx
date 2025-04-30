@@ -2,7 +2,6 @@ import "@/app/globals.css"
 import type { Metadata } from "next"
 import Script from "next/script"
 import type React from "react"
-import { fontClasses } from "@/lib/fonts"
 
 export const metadata: Metadata = {
   title: "Nutrix - Más que suplementos",
@@ -13,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={fontClasses}>
+    <html lang="es">
       <head>
         <Script strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=G-BZ05K0KXJE`} />
         <Script
@@ -31,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className="font-sans">
+      <body>
         {children}
         <elevenlabs-convai agent-id="f6EIYyqA7cHONUNOig5G"></elevenlabs-convai>
         <Script src="https://elevenlabs.io/convai-widget/index.js" strategy="lazyOnload" />
