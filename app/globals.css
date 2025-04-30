@@ -1,13 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Bebas+Neue&family=Be+Vietnam+Pro:wght@400;500;600&display=swap");
+/* Eliminamos la importación directa de Google Fonts que estaba causando problemas */
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Bebas+Neue&family=Be+Vietnam+Pro:wght@400;500;600&display=swap"); */
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --font-montserrat: "Montserrat", sans-serif;
-  --font-bebas-neue: "Bebas Neue", sans-serif;
-  --font-be-vietnam: "Be Vietnam Pro", sans-serif;
+  --font-montserrat: "Montserrat", system-ui, sans-serif;
+  --font-bebas-neue: "Bebas Neue", system-ui, sans-serif;
+  --font-be-vietnam: "Be Vietnam Pro", system-ui, sans-serif;
 }
 
 body {
