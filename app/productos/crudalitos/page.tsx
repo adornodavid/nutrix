@@ -45,7 +45,7 @@ const product = {
     {
       name: "Ana Martínez",
       comment:
-        "Después de una noche de fiesta, Crudalitos fue mi salvación. En 30 minutos noté alivio en la náusea y el dolor de cabeza. Me encanta que no tiene azúcar ni gluten. ¡Lo recomiendo!",
+        "Después de una noche de fiesta, Crudalitos fue mi salvación. En 30 minutos noté alivio en la náusea y el dolor de cabeza. Me encanta que no tiene azúcar ni gl  En 30 minutos noté alivio en la náusea y el dolor de cabeza. Me encanta que no tiene azúcar ni gluten. ¡Lo recomiendo!",
       rating: 4,
     },
     {

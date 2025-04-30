@@ -17,7 +17,7 @@ const bebasNeue = Bebas_Neue({
   display: "swap",
 })
 
-// Eliminamos la importación de Be_Vietnam_Pro que podría estar causando problemas
+// Remove Be_Vietnam_Pro font which is causing issues
 
 export const metadata: Metadata = {
   title: "Nutrix - Más que suplementos",

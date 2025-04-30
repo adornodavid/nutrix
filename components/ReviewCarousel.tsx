@@ -116,10 +116,10 @@ export const ReviewCarousel: React.FC = () => {
                   <div className="h-12 w-12 rounded-full bg-nutrix-green" />
                   <div>
                     <div className="font-bebas text-nutrix-white">{review.name}</div>
-                    <div className="text-sm text-nutrix-white font-vietnam">Producto: {review.product}</div>
+                    <div className="text-sm text-nutrix-white">Producto: {review.product}</div>
                   </div>
                 </div>
-                <p className="text-nutrix-white mb-4 font-vietnam">{review.comment}</p>
+                <p className="text-nutrix-white mb-4">{review.comment}</p>
               </div>
               <div className="flex gap-1">
                 {[1, 2, 3, 4, 5].map((star) => (
