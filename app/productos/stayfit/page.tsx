@@ -4,11 +4,11 @@ import Image from "next/image"
 import { Star } from "lucide-react"
 import { Header } from "@/components/ui/header"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 const product = {
   name: "StayFit",
   description: "Suplemento Termogénico Quemagrasa",
-  price: "$549.00 Pesos Mexicanos",
   longDescription:
     "StayFit es un suplemento termogénico diseñado para acelerar el metabolismo, aumentar la quema de grasa y mejorar el rendimiento físico. Su fórmula combina ingredientes naturales que potencian la conversión de grasa en energía, brindando vitalidad y resistencia durante todo el día.",
   benefits: [
@@ -81,17 +81,6 @@ export default function StayFitPage() {
             <p className="text-xl font-bebas mb-2 text-nutrix-gray">{product.description}</p>
             <p className="mb-6 font-vietnam text-nutrix-gray">{product.longDescription}</p>
 
-            {/* Precio y primer botón de compra */}
-            <p className="text-2xl font-bebas mb-4 text-nutrix-red">Precio: {product.price}</p>
-            <div className="mb-8">
-              <Button
-                className="w-full bg-nutrix-red text-nutrix-white hover:bg-nutrix-blue hover:text-nutrix-white transition-colors"
-                onClick={handleBuyNow}
-              >
-                Comprar ahora
-              </Button>
-            </div>
-
             <h2 className="text-2xl font-bebas mt-8 mb-2 text-nutrix-red">BENEFICIOS:</h2>
             <ul className="list-disc pl-5 mb-6 font-vietnam text-nutrix-gray">
               {product.benefits.map((benefit, index) => (
@@ -112,15 +101,18 @@ export default function StayFitPage() {
             <h2 className="text-2xl font-bebas mb-2 text-nutrix-red">MODO DE USO:</h2>
             <p className="mb-6 font-vietnam text-nutrix-gray">{product.usage}</p>
 
-            {/* Segundo botón de compra */}
-            <p className="text-2xl font-bebas mb-4 text-nutrix-red">Precio: {product.price}</p>
-            <div className="mb-8">
+            <div className="flex space-x-4 mt-4">
               <Button
-                className="w-full bg-nutrix-red text-nutrix-white hover:bg-nutrix-blue hover:text-nutrix-white transition-colors"
+                className="bg-nutrix-red text-nutrix-white hover:bg-nutrix-blue hover:text-nutrix-white transition-colors"
                 onClick={handleBuyNow}
               >
                 Comprar ahora
               </Button>
+              <Link href="/#contacto">
+                <Button className="bg-nutrix-gray text-nutrix-white hover:bg-nutrix-blue hover:text-nutrix-white transition-colors">
+                  Más información
+                </Button>
+              </Link>
             </div>
           </div>
         </div>

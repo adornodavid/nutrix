@@ -4,12 +4,12 @@ import Image from "next/image"
 import { Star } from "lucide-react"
 import { Header } from "@/components/ui/header"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 const product = {
   id: "prod_RlesDnqv6DAsXg",
   name: "Crudalitos",
   description: "Suplemento para la Resaca y Detoxificación",
-  price: "$549.00 Pesos Mexicanos",
   longDescription:
     "Crudalitos es un suplemento diseñado para aliviar los síntomas de la resaca y apoyar la detoxificación del cuerpo después del consumo de alcohol o una noche de desvelo. Su fórmula avanzada ayuda a reponer electrolitos, mejorar la hidratación y restaurar los nutrientes esenciales para que te sientas mejor rápidamente.",
   keyFeatures: [
@@ -32,7 +32,7 @@ const product = {
     "Vitaminas B1, B3, B6, B12 y C → Restauran los niveles de vitaminas afectadas por el alcohol",
     "Resveratrol y Vitamina E → Antioxidantes que reducen el daño celular causado por el alcohol",
   ],
-  presentation: "Frasco con 90 cápsulas (30 porciones)",
+  presentation: "Frasco con 90 cápsulas (20 porciones)",
   usage: "Dosis recomendada: Tomar 3 cápsulas el día siguiente a una resaca o desvelo",
   idealFor: [
     "Personas que consumieron alcohol y quieren evitar la resaca",
@@ -45,7 +45,7 @@ const product = {
     {
       name: "Ana Martínez",
       comment:
-        "Después de una noche de fiesta, Crudalitos fue mi salvación. En 30 minutos noté alivio en la náusea y el dolor de cabeza. Me encanta que no tiene azúcar ni gl  En 30 minutos noté alivio en la náusea y el dolor de cabeza. Me encanta que no tiene azúcar ni gluten. ¡Lo recomiendo!",
+        "Después de una noche de fiesta, Crudalitos fue mi salvación. En 30 minutos noté alivio en la náusea y el dolor de cabeza. Me encanta que no tiene azúcar ni gluten. ¡Lo recomiendo!",
       rating: 4,
     },
     {
@@ -88,15 +88,18 @@ export default function CrudalitosPage() {
             <p className="text-xl font-bebas mb-2 text-nutrix-gray">{product.description}</p>
             <p className="mb-6 font-vietnam text-nutrix-gray">{product.longDescription}</p>
 
-            {/* Precio y primer botón de compra */}
-            <p className="text-2xl font-bebas mb-4 text-nutrix-green">Precio: {product.price}</p>
-            <div className="mb-8">
+            <div className="flex space-x-4 mt-4">
               <Button
-                className="w-full bg-nutrix-green text-nutrix-white hover:bg-nutrix-blue hover:text-nutrix-white transition-colors"
+                className="bg-nutrix-green text-nutrix-white hover:bg-nutrix-blue hover:text-nutrix-white transition-colors"
                 onClick={handleBuyNow}
               >
                 Comprar ahora
               </Button>
+              <Link href="/#contacto">
+                <Button className="bg-nutrix-gray text-nutrix-white hover:bg-nutrix-blue hover:text-nutrix-white transition-colors">
+                  Más información
+                </Button>
+              </Link>
             </div>
 
             <h2 className="text-2xl font-bebas mt-8 mb-2 text-nutrix-green">CARACTERÍSTICAS PRINCIPALES:</h2>
@@ -125,17 +128,6 @@ export default function CrudalitosPage() {
 
             <h2 className="text-2xl font-bebas mb-2 text-nutrix-green">MODO DE USO:</h2>
             <p className="mb-6 font-vietnam text-nutrix-gray">{product.usage}</p>
-
-            {/* Segundo botón de compra */}
-            <p className="text-2xl font-bebas mb-4 text-nutrix-green">Precio: {product.price}</p>
-            <div className="mb-8">
-              <Button
-                className="w-full bg-nutrix-green text-nutrix-white hover:bg-nutrix-blue hover:text-nutrix-white transition-colors"
-                onClick={handleBuyNow}
-              >
-                Comprar ahora
-              </Button>
-            </div>
 
             <h2 className="text-2xl font-bebas mb-2 text-nutrix-green">IDEAL PARA:</h2>
             <ul className="list-disc pl-5 mb-6 font-vietnam text-nutrix-gray">
